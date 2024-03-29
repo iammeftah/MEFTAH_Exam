@@ -1,0 +1,95 @@
+/* Dark Theme Colors */
+:root {
+    --primary-color: #1e1e2e;
+    --secondary-color: #282a36;
+    --accent-color: #ff79c6;
+    --text-color: #f8f8f2;
+    --link-color: #bd93f9;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .app-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .nav-links a {
+    color: var(--link-color);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.header .nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Form Styles */
+form {
+    margin: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"], select {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--link-color);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+th {
+    background-color: var(--secondary-color);
+}
+
+tr:hover {
+    background-color: var(--secondary-color);
+}
